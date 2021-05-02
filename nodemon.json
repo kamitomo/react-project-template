@@ -1,0 +1,18 @@
+{
+  "restartable": "rs",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "watch": [
+    "server"
+  ],
+  "ignore": [
+    "*.tsx",
+    "test/",
+    "*.test.ts"
+  ],
+  "ext": "js, ts, json",
+  "execMap": {
+    "ts": "ts-node --files -r tsconfig-paths/register --project tsconfig.server.json"
+  }
+}
