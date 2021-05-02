@@ -59,6 +59,12 @@ module.exports = {
           },
         ],
       },
+      {
+        // 対象となるファイルの拡張子
+        test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
+        // 画像をBase64として取り込む
+        type: 'asset/inline',
+      },
     ],
   },
   // import 文で .ts や .tsx ファイルを解決するため
