@@ -51,6 +51,18 @@ module.exports = {
             },
           },
           {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  // Autoprefixerを有効化
+                  // ベンダープレフィックスを自動付与する
+                  ['autoprefixer', { grid: true }],
+                ],
+              },
+            },
+          },
+          {
             loader: 'sass-loader',
             options: {
               // ソースマップの利用有無
